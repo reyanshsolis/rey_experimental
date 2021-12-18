@@ -1,7 +1,7 @@
 name: Build/Installation issue
-description: Report an issue if you have trouble installing Open3D.
-title: "BUILD: <Please write a comprehensive title after the 'BUILD: ' prefix>"
-labels: [32 - BUILD]
+description: Report an issue if you have trouble building or installing Open3D.
+title: "Comprehensive title for the build/install issue report."
+labels: [build]
 
 body:
 - type: textarea
@@ -9,7 +9,7 @@ body:
     label: "Steps to reproduce:"
     description: >
       Please describe the installation method (e.g. building from source,
-      Anaconda, pip), your OS and NumPy/Python version information.
+      Anaconda, pip).
   validations:
     required: true
 
@@ -18,12 +18,25 @@ body:
     label: "Error message:"
     description: >
       Please include full error message, if any.
-      If you are reporting a segfault please include a GDB traceback,
-      which you can generate by following
-      [these instructions](https://github.com/numpy/numpy/blob/main/doc/source/dev/development_environment.rst#debugging).
+      If you are reporting a segfault please include a GDB traceback.
     placeholder: |
-      << Full traceback starting from `Traceback: ...` >>
+      << Full traceback >>
     render: shell
+
+- type: textarea
+  attributes:
+    label: "System and Open3D/Python version information:"
+    description: Output from `import sys, numpy; print(numpy.__version__, sys.version)`.
+    placeholder: |
+      - Operating system: (e.g. OSX 10.15, Ubuntu 18.04, Windows 10 64-bit)
+      - Python version: (e.g. Python 3.8 / output from `import sys  print(sys.version)`)
+      - Open3D version: (output from python: `print(open3d.__version__)`)
+      - System type: (x84 / arm / m1 / aarch / jetson-nano / jetson-tx / rpi)
+      - Is this remote workstation?: yes or no
+      - How did you install Open3D?: (e.g. pip, conda, build from source)
+      - Compiler version (if built from source): (e.g. gcc 7.5, clang 7.0)
+  validations:
+    required: true
 
 - type: textarea
   attributes:

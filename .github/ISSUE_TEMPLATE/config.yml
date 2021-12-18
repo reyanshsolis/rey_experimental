@@ -1,6 +1,6 @@
 contact_links:
-  - name: Learn using Tutorials
-    url: http://www.open3d.org/docs/release/
+  - name: Tutorials and Documentation
+    url: http://www.open3d.org/docs/latest/
     about: "Read the tutorials to learn how to use Open3D better."
   - name: Get help on Discord
     url: https://discord.gg/D35BGvn
