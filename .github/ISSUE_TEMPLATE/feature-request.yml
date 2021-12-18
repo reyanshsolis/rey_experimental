@@ -16,3 +16,8 @@ body:
     label: "Proposed new feature or change:"
   validations:
     required: true
+
+- type: textarea
+  attributes:
+    label: "Additional information:"
+    description: Add any other context or screenshots about the feature request here.

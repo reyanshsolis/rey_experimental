@@ -1,7 +1,7 @@
 name: Documentation
 description: Report an issue related to the Open3D documentation.
 title: "Comprehensive title for the documentation issue report."
-labels: [doc]
+labels: [docs]
 
 body:
 - type: textarea

@@ -10,7 +10,7 @@ body:
       Thank you for taking the time to file a bug report. Before creating a new
       issue, please make sure to take a few minutes to check the issue tracker
       for existing issues about the bug. If it is a build/installation related
-      bug, then report it on `Build/Install Issues Report`.
+      bug, then report it on `Build/Installation Issue Report`.
 
       Before submitting issue:
         1. Search for [similar issues](https://github.com/isl-org/Open3D/issues).
