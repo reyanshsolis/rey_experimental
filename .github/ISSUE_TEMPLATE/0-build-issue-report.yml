@@ -14,9 +14,7 @@ body:
 
       Before submitting issue:
         1. Search for [similar issues](https://github.com/isl-org/Open3D/issues).
-        2. For Python issues, please test with the 
-        [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). 
-        It may be already fixed!
+        2. For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!
         3. Please check with the documentation properly.
           3.a. [Installing from PyPI or Conda](http://www.open3d.org/docs/latest/getting_started.html#installing-from-pypi-or-conda).
           3.b. [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source).
