@@ -1,6 +1,6 @@
 name: Feature Request
 description: New feature request.
-title: "Comprehensive title for the build/install issue report"
+title: "Comprehensive title for the feature issue report"
 labels: [feature request]
 
 body:
@@ -17,7 +17,7 @@ body:
   validations:
     required: true
 
-- type: textarea
+- type: markdown
   attributes:
     label: "Additional information:"
     description: Add any other context or screenshots about the feature request here.
