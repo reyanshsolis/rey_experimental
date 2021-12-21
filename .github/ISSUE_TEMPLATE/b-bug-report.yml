@@ -41,7 +41,6 @@ body:
       If you are reporting a segfault please include a GDB traceback.
     placeholder: |
       << Full error message >>
-    render: shell
 
 - type: textarea
   attributes:
