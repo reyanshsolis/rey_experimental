@@ -10,12 +10,15 @@ body:
       Thank you for taking the time to file a bug report. Before creating a new
       issue, please be sure to take a few minutes to check the issue tracker
       for existing bug issues. If it is a build/installation related
-      bug, then report it on `Build/Installation Issue Report`.
+      bug, then report it on `Report Build/Installation Related Issue`.
 
       Before submitting issue:
         1. Search for [similar issues](https://github.com/isl-org/Open3D/issues).
         2. For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!
-    
+
+      Please describe the installation method in detail (e.g. building from 
+      source, Anaconda, pip). Share all the steps/commands you used to 
+      build/install Open3D. 
 - type: textarea
   attributes: 
     label: "Describe the issue:"
@@ -26,7 +29,8 @@ body:
   attributes:
     label: "Example to Reproduce:"
     description: >
-      Steps/a short code example reproducing the problem/missing feature. Should be self-contained.
+      Steps/a short code example (python or C++) reproducing the problem/missing feature. 
+      The example must be self-contained, with instructions to help us reproduce the issue.
     placeholder: |
       << your code here >>
     render: python
@@ -37,7 +41,8 @@ body:
   attributes:
     label: "Error message:"
     description: >
-      Please include full error message, if any.
+      Please include `FULL` error message, if any. You may even submit/attach
+      the entire terminal output with the error message. 
       If you are reporting a segfault please include a GDB traceback.
     placeholder: |
       << Full error message >>
