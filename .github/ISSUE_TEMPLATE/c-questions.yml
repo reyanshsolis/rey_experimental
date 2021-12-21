@@ -1,7 +1,7 @@
-name: Documentation
-description: Report an issue related to the Open3D documentation.
-title: "Comprehensive title for the documentation issue report."
-labels: [docs]
+name: Ask Questions
+description: Ask us queries/questions related to Open3D.
+title: "Comprehensive title for the question."
+labels: [question]
 
 body:
 - type: textarea
