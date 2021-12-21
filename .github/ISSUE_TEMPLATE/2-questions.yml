@@ -6,16 +6,12 @@ labels: [question]
 body:
 - type: textarea
   attributes: 
-    label: "Issue with current documentation:"
+    label: "My Question:"
     description: >
-      Please make sure to leave a reference to the document/code you're
-      referring to. You can also check the development version of the
-      documentation and see if this issue has already been addressed at
-      http://www.open3d.org/docs/latest/.
+      Before submitting your question:
+        1. Search for [similar questions](https://github.com/isl-org/Open3D/issues).
+        2. Please check with the [documentation](http://www.open3d.org/docs/latest/) properly.
+        3. Please check the C++ or python examples related to your application.
 
-- type: textarea
-  attributes:
-    label: "Idea or request for content:"
-    description: >
-      Please describe as clearly as possible what topics you think are missing
-      from the current documentation.
+      Please make sure to leave a reference to the document/code you're
+      referring to. 
