@@ -23,7 +23,7 @@ body:
       << Full traceback >>
     render: shell
 
-- type: markdown
+- type: textarea
   attributes:
     label: "Additional information:"
     description: Please add any additional information that could help us diagnose the problem better.
