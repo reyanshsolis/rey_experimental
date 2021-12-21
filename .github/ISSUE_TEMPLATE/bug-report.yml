@@ -8,8 +8,8 @@ body:
   attributes:
     value: >
       Thank you for taking the time to file a bug report. Before creating a new
-      issue, please make sure to take a few minutes to check the issue tracker
-      for existing issues about the bug. If it is a build/installation related
+      issue, please be sure to take a few minutes to check the issue tracker
+      for existing bug issues. If it is a build/installation related
       bug, then report it on `Build/Installation Issue Report`.
 
       Before submitting issue:
@@ -26,8 +26,7 @@ body:
   attributes:
     label: "Example to Reproduce:"
     description: >
-      Steps/a short code example that reproduces the problem/missing feature. It
-      should be self-contained.
+      Steps/a short code example reproducing the problem/missing feature. Should be self-contained.
     placeholder: |
       << your code here >>
     render: python
@@ -46,7 +45,7 @@ body:
 
 - type: textarea
   attributes:
-    label: "Expected behaviour:"
+    label: "Expected behavior:"
     description: >
       A clear and concise description of what you expected to happen.
   validations:
