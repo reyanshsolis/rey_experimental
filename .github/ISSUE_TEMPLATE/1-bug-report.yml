@@ -50,7 +50,7 @@ body:
   validations:
     required: true
 
-- type: markdown
+- type: textarea
   attributes:
     label: "Attach any additional files required to reproduce the issue."
     description: >
