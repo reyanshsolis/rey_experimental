@@ -18,7 +18,7 @@ body:
     label: "Error message:"
     description: >
       Please include full error message, if any.
-      If you are reporting a segfault please include a GDB traceback.
+      If you are reporting a segfault, please include a GDB traceback.
     placeholder: |
       << Full traceback >>
     render: shell
