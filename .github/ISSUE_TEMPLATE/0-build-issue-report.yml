@@ -1,6 +1,6 @@
 name: Report Build / Installation Related Issue
-description: Report an issue if you have trouble building or installing Open3D.
-title: "Comprehensive title for the build/install issue report."
+description: I have trouble installing or compiling Open3D.
+title: "Summarize the issue and your environments (e.g., \"Cannot compile on Ubuntu 20.04 with OpenBLAS\")"
 labels: [build/install issue]
 
 body:
