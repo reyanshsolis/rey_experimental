@@ -1,0 +1,87 @@
+name: Build/Installation issue
+description: I have trouble installing or compiling Open3D.
+title: "Summarize the issue and your environments (e.g., \"Cannot compile on Ubuntu 20.04 with OpenBLAS\")"
+labels: [build]
+
+body:
+- type: markdown
+  attributes:
+    value: >
+      Thank you for taking the time to file a bug report. Before creating a new
+      issue, please make sure to take a few minutes to check the issue tracker
+      for existing issues about the bug. If it is a build/installation related
+      bug, then report it on `Build Issues Report`.
+      Before submitting, I have (mark "x" in the check-box like "[x]"):
+        
+      - [] Search for [similar issues](https://github.com/isl-org/Open3D/issues).
+      - [] For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!
+    
+body:
+- type: textarea
+  attributes:
+    label: "Steps to reproduce:"
+    description: >
+      Please provide step-by-step instructions on how to reproduce the issue.
+      Please describe the installation method (e.g. building from source,
+      Anaconda, pip), your OS and NumPy/Python version information.
+      Providing *detailed* instructions is crucial for other to help with the issues.
+      Please modify the following example.
+    value: >
+      # I first clone Open3D by:
+      git clone https://github.com/isl-org/Open3D.git
+      cd Open3D
+
+      # Then, I build Open3D with:
+      mkdir build
+      cd build
+      cmake -DUSE_BLAS=ON ..
+      make -j$(nproc)
+    render: shell
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Error message:"
+    description: >
+      Please include full error information and terminal output.
+      If you are reporting a segfault please include a GDB traceback.
+    placeholder: |
+      Provide the *full* error message.
+      It is even better to attach your terminal commands and the full terminal outputs.
+      Provide screenshots if applicable.
+      << Full traceback >>
+
+      When I build Open3D, I get the following error:
+      Building OpenBLAS with LAPACK from source
+      CMake Error at 3rdparty/find_dependencies.cmake:1227 (message):
+      gfortran is required to compile LAPACK from source.  On Ubuntu, please
+      install by `apt install gfortran`.  On macOS, please install by `brew
+      install gfortran`.
+      Call Stack (most recent call first):
+      CMakeLists.txt:446 (include)
+  
+      Here's the full terminal output with my commands:
+      (drag and drop a .txt file to GitHub)
+    render: shell
+
+- type: textarea
+  attributes:
+    label: "Additional information:"
+    description: Please add any additional information that could help us diagnose the problem better.
+
+- type: textarea
+  attributes:
+    label: "System and Open3D/Python version information:"
+    description: >
+     Output from `import sys, numpy; print(open3d.__version__), sys.version)`.
+    value: >
+      - Operating system: (e.g. OSX 10.15, Ubuntu 18.04, Windows 10 64-bit)
+      - Python version: (e.g. Python 3.8 / output from `import sys  print(sys.version)`)
+      - Open3D version: (output from python: `print(open3d.__version__)`)
+      - System type: (x84 / arm / m1 / aarch / jetson-nano / jetson-tx / rpi)
+      - Is this remote workstation?: yes or no
+      - How did you install Open3D?: (e.g. pip, conda, build from source)
+      - Compiler version (if built from source): (e.g. gcc 7.5, clang 7.0)
+  validations:
+    required: true

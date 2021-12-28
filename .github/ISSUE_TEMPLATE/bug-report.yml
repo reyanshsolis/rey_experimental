@@ -1,7 +1,7 @@
 name: Bug Report
-description: Report a bug. For security vulnerabilities see Report a security vulnerability in the templates.
-title: "BUG: <Please write a comprehensive title after the 'BUG: ' prefix>"
-labels: [00 - Bug]
+description: Report a bug. 
+title: "Comprehensive title for bug report"
+labels: [bug]
 
 body:
 - type: markdown
@@ -12,8 +12,9 @@ body:
       for existing issues about the bug. If it is a build/installation related
       bug, then report it on `Build Issues Report`.
       Before submitting issue:
-      1. Search for [similar issues](https://github.com/isl-org/Open3D/issues).
-      2. For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!
+        
+        1. Search for [similar issues](https://github.com/isl-org/Open3D/issues).
+        2. For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!
     
 - type: textarea
   attributes: 
@@ -54,7 +55,8 @@ body:
 - type: textarea
   attributes:
     label: "System and Open3D/Python version information:"
-    description: Output from `import sys, numpy; print(numpy.__version__, sys.version)`.
+    description: >
+     Output from `import sys, numpy; print(open3d.__version__), sys.version)`.
     placeholder: |
       - Operating system: (e.g. OSX 10.15, Ubuntu 18.04, Windows 10 64-bit)
       - Python version: (e.g. Python 3.8 / output from `import sys  print(sys.version)`)
@@ -65,3 +67,4 @@ body:
       - Compiler version (if built from source): (e.g. gcc 7.5, clang 7.0)
   validations:
     required: true
+  
