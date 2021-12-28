@@ -33,7 +33,22 @@ body:
       Please include `FULL` error message, if any.
       If you are reporting a segfault, please include a GDB traceback.
     placeholder: |
+      Provide the *full* error message.
+      It is even better to attach your terminal commands and the full terminal outputs.
+      Provide screenshots if applicable.
       << Full traceback >>
+
+      When I build Open3D, I get the following error:
+      Building OpenBLAS with LAPACK from source
+      CMake Error at 3rdparty/find_dependencies.cmake:1227 (message):
+      gfortran is required to compile LAPACK from source.  On Ubuntu, please
+      install by `apt install gfortran`.  On macOS, please install by `brew
+      install gfortran`.
+      Call Stack (most recent call first):
+      CMakeLists.txt:446 (include)
+  
+      Here's the full terminal output with my commands:
+      (drag and drop a .txt file to GitHub)
     render: shell
 
 - type: textarea
@@ -61,6 +76,6 @@ body:
       - How did you install Open3D?: (e.g. pip, conda, build from source)
 
       - Compiler version (if built from source): (e.g. gcc 7.5, clang 7.0)
-      
+
   validations:
     required: true
