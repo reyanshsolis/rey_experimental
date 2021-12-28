@@ -1,11 +1,6 @@
 contact_links:
-<<<<<<< HEAD
-  - name: Documentation and Tutorials
-    url: http://www.open3d.org/docs/release/
-=======
   - name: Link to Documentation and Tutorials
     url: http://www.open3d.org/docs/latest/
->>>>>>> ed01558f9d796a1f7b0bdd677c57a756afb9493d
     about: "Read the tutorials to learn how to use Open3D better."
   - name: Link to Join Discord
     url: https://discord.gg/D35BGvn
