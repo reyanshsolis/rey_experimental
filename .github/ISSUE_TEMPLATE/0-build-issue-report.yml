@@ -27,14 +27,22 @@ body:
       Please modify the following example.
     value: >
       # I first clone Open3D by:
+
       git clone https://github.com/isl-org/Open3D.git
+
       cd Open3D
 
+
       # Then, I build Open3D with:
+
       mkdir build
+
       cd build
+
       cmake -DUSE_BLAS=ON ..
-      make -j$(nproc) 
+
+      make -j$(nproc)
+
     render: shell   
   validations:
     required: true
