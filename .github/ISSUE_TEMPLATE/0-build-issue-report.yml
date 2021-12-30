@@ -7,8 +7,8 @@ body:
 
 - type: checkboxes
   attributes:
-    label: "I confirm that before submitting the issue I have done the following:"
-    description: Please take the following steps before submitting the issue. It is required to mark the checkboxes, before submitting the issue.
+    label: "I confirm that before submitting the issue I have taken the following steps:"
+    description: It is required to mark the checkboxes, before submitting the issue.
     options:
       - label: "Search for [similar issues](https://github.com/isl-org/Open3D/issues)."
         required: true
@@ -78,7 +78,7 @@ body:
     render: shell
   validations:
     required: true
-    
+
 - type: textarea
   attributes:
     label: "Additional information:"
