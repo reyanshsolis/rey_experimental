@@ -11,7 +11,9 @@ body:
     description: Please take the following steps before submitting the issue. It is required to mark the checkboxes, before submitting the issue.
     options:
       - label: "Search for [similar issues](https://github.com/isl-org/Open3D/issues)."
+        required: true
       - label: "For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!"
+        required: true
       - label: "Please check with the documentation properly. [For example: [Installing from PyPI](http://www.open3d.org/docs/latest/getting_started.html#installing-from-pypi-or-conda), [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source), [ARM Support](http://www.open3d.org/docs/latest/arm.html#arm-support)]."
         required: true
 
