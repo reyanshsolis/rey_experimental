@@ -20,9 +20,16 @@ body:
   attributes: 
     label: "Describe the issue:"
     description: >
-      Test.
-    value: >
-      Test.
+      Provide the *detailed* description of the issue you are facing. Include
+      references to any documentation or issues you refered.
+    placeholder: |
+      I have been trying to run the colored point cloud registration for 2 
+      point clouds of raw sizes of approximately 7 million points by following 
+      the colored point cloud registration. However, every time I run the code,
+      it results in a segmentation fault.
+      
+      I tried downsampling the two by varying voxel sizes ranging from 
+      0.01 to 0.1 for increasing speed. However, this does not rectify the situation.
   validations:
     required: true
 
@@ -34,7 +41,7 @@ body:
       The example must be self-contained, with instructions to help us reproduce the issue.
     placeholder: |
       << your code here >>
-      
+
       import open3d as o3d
       import numpy as np
 
