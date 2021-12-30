@@ -4,40 +4,50 @@ title: "Summarize the issue and your environments (e.g., \"Cannot compile on Ubu
 labels: [build/install issue]
 
 body:
+
+- type: checkboxes
+  attributes:
+    label: "Please check the following checkbox, before submitting issue:"
+    description: test.
+    options:
+      - label: "Search for [similar issues](https://github.com/isl-org/Open3D/issues)."
+      - label: "For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!"
+      - label: "Please check with the documentation properly. [For example: [Installing from PyPI or Conda](http://www.open3d.org/docs/latest/getting_started.html#installing-from-pypi-or-conda), [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source), [Experimental ARM Support](http://www.open3d.org/docs/latest/arm.html#arm-support)]"
+        required: true
+
 - type: textarea
   attributes:
     label: "Steps to reproduce:"
     description: >
-      Before submitting issue:
-        1. Search for [similar issues](https://github.com/isl-org/Open3D/issues).
-        2. For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!
-        3. Please check with the documentation properly.
-          3.a. [Installing from PyPI or Conda](http://www.open3d.org/docs/latest/getting_started.html#installing-from-pypi-or-conda).
-          3.b. [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source).
-          3.c. [Experimental ARM Support](http://www.open3d.org/docs/latest/arm.html#arm-support).
-
       Please provide step-by-step instructions on how to reproduce the issue. 
       Describe the installation method (e.g. building from source, Anaconda, 
-      pip), your OS and NumPy/Python version information. Providing *detailed* 
-      instructions is crucial for other to help with the issues. Here is an 
-      example for reference you may modify.
+      pip). Providing *detailed* instructions is crucial for other to help with
+      the issues. Here is an example for reference you may modify.
     value: >
-      # I first clone Open3D by:
+      #### I first clone Open3D by:
+
+      ```
 
       git clone https://github.com/isl-org/Open3D.git
 
       cd Open3D
 
+      ```
+      
 
-      # Then, I build Open3D with:
+      #### Then, I build Open3D (on Ubuntu 20.04, with CUDA 11.5) with:
+
+      ```
 
       mkdir build
 
       cd build
 
-      cmake -DUSE_BLAS=ON ..
+      cmake -DBUILD_SHARED_LIBS=OFF -DBUILD_CUDA_MODULE=OFF -DUSE_BLAS=ON -DBUILD_WEBRTC=OFF ..
 
       make -j$(nproc)
+
+      ```
 
     # render: shell   
   validations:
