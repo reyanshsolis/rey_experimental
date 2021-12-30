@@ -1,6 +1,6 @@
 name: Report Bug
 description: I found a possible bug while using Open3D. 
-title: "Summarize the bug (e.g., \"Segmentation Fault for Colored Point Cloud Registration\"")"
+title: "Summarize the bug (e.g., \"Segmentation Fault for Colored Point Cloud Registration\")"
 labels: [bug]
 
 body:
@@ -15,7 +15,7 @@ body:
         required: true
       - label: "Check with the documentation properly."
         required: true
-        
+
 - type: textarea
   attributes: 
     label: "Describe the issue:"
