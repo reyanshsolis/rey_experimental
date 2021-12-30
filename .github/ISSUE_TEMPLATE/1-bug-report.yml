@@ -3,6 +3,7 @@ description: I found a possible bug while using Open3D.
 title: "Summarize the bug (e.g., \"Segmentation Fault for Colored Point Cloud Registration\"")"
 labels: [bug]
 
+body:
 - type: checkboxes
   attributes:
     label: "I confirm that before submitting the issue I have taken the following steps:"
@@ -14,8 +15,7 @@ labels: [bug]
         required: true
       - label: "Check with the documentation properly."
         required: true
-
-body:
+        
 - type: textarea
   attributes: 
     label: "Describe the issue:"
