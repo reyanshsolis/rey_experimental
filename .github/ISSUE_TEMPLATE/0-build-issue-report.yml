@@ -60,9 +60,8 @@ body:
     label: "Error message:"
     description: >
       Provide the *full* error message. It is even better to attach your 
-      terminal commands and the full terminal outputs. Provide screenshots if 
-      applicable. If you are reporting a segfault, please include a GDB 
-      traceback.
+      terminal commands and the full terminal outputs. If you are 
+      reporting a segfault, please include a GDB traceback.
 
       When I build Open3D, I get the following error:
     placeholder: |
@@ -77,14 +76,16 @@ body:
       Here's the full terminal output with my commands:
       (drag and drop a .txt file to GitHub)
     render: shell
-
+  validations:
+    required: true
+    
 - type: textarea
   attributes:
     label: "Additional information:"
     description: >
       Please add any additional information that could help us diagnose the 
-      problem better. You may even attach log files, generated wheel, 
-      screenshots or any other files, that could be helpful.
+      problem better. Provide screenshots if applicable. You may even attach
+      log files, generated wheel, or any other files, that could be helpful.
 
 - type: textarea
   attributes:
