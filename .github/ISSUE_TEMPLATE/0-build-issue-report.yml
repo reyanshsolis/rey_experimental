@@ -8,10 +8,6 @@ body:
   attributes:
     label: "Steps to reproduce:"
     description: >
-      Thank you for taking the time to file a build/installation related issue 
-      report. Before creating a new issue, please be sure to take a few minutes
-      to check the issue tracker for existing `build/install issue`. 
-
       Before submitting issue:
         1. Search for [similar issues](https://github.com/isl-org/Open3D/issues).
         2. For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!
@@ -20,11 +16,11 @@ body:
           3.b. [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source).
           3.c. [Experimental ARM Support](http://www.open3d.org/docs/latest/arm.html#arm-support).
 
-      Please provide step-by-step instructions on how to reproduce the issue.
-      Please describe the installation method (e.g. building from source,
-      Anaconda, pip), your OS and NumPy/Python version information.
-      Providing *detailed* instructions is crucial for other to help with the issues.
-      Please modify the following example.
+      Please provide step-by-step instructions on how to reproduce the issue. 
+      Describe the installation method (e.g. building from source, Anaconda, 
+      pip), your OS and NumPy/Python version information. Providing *detailed* 
+      instructions is crucial for other to help with the issues. Here is an 
+      example for reference you may modify.
     value: >
       # I first clone Open3D by:
 
@@ -43,7 +39,7 @@ body:
 
       make -j$(nproc)
 
-    render: shell   
+    # render: shell   
   validations:
     required: true
 
@@ -51,9 +47,10 @@ body:
   attributes:
     label: "Error message:"
     description: >
-      Provide the *full* error message.
-      It is even better to attach your terminal commands and the full terminal outputs.
-      Provide screenshots if applicable. If you are reporting a segfault, please include a GDB traceback.
+      Provide the *full* error message. It is even better to attach your 
+      terminal commands and the full terminal outputs. Provide screenshots if 
+      applicable. If you are reporting a segfault, please include a GDB 
+      traceback.
 
       When I build Open3D, I get the following error:
     placeholder: |
