@@ -14,12 +14,6 @@ body:
       - label: "I have checked with the [latest documentation](http://www.open3d.org/docs/latest/) properly. [For example: [Installing from PyPI](http://www.open3d.org/docs/latest/getting_started.html#installing-from-pypi-or-conda), [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source), [ARM Support](http://www.open3d.org/docs/latest/arm.html#arm-support)]."
         required: true
 
-- type: markdown
-  attributes:
-    
-    value: >
-
-
 - type: textarea
   attributes:
     description: >
