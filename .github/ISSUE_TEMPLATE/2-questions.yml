@@ -6,7 +6,7 @@ labels: [question]
 body:
 - type: checkboxes
   attributes:
-    label: "I confirm that before submitting the issue I have taken the following steps:"
+    label: "I confirm that before submitting the question I have taken the following steps:"
     description: It is required to mark the checkboxes, before submitting the issue.
     options:
       - label: "I have searched for [similar issues](https://github.com/isl-org/Open3D/issues)."
