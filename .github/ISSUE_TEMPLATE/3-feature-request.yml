@@ -1,6 +1,6 @@
 name: Feature Request
-description: New feature request.
-title: "Comprehensive title for the feature issue report"
+description: New feature request. Request to add some new functionality or improve the existing ones.
+title: "Summarize your request. (e.g., \"Request to add ROS to Open3D PointCloud conversion support?\")"
 labels: [feature request]
 
 body:
@@ -26,6 +26,11 @@ body:
     label: "Proposed new feature or change:"
   validations:
     required: true
+
+- type: textarea
+  attributes:
+    label: "References:"
+    description: Please share some references that can help us know more about this feature and try to implement the same. For ex. research paper, open-source codes, stackoverflow, etc. 
 
 - type: textarea
   attributes:
