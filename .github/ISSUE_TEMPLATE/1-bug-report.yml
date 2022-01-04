@@ -13,7 +13,7 @@ body:
         required: true
       - label: "For Python issues, I have tested with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). (It may be already fixed!)"
         required: true
-      - label: "I have checked with the [latest documentation](http://www.open3d.org/docs/latest/) properly. 
+      - label: "I have checked with the [latest documentation](http://www.open3d.org/docs/latest/) properly." 
         required: true
 
 - type: textarea
