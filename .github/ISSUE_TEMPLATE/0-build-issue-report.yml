@@ -50,8 +50,7 @@ body:
       make -j$(nproc)
 
       ```
-
-    # render: shell   
+ 
   validations:
     required: true
 
@@ -59,7 +58,7 @@ body:
   attributes:
     label: "Error message:"
     description: >
-      Provide the *full* error message. It is even better to attach your 
+      Provide the *full* error message. It is even better to provide your 
       terminal commands and the full terminal outputs. If you are 
       reporting a segfault, please include a GDB traceback.
 
@@ -74,7 +73,7 @@ body:
       CMakeLists.txt:446 (include)
   
       Here's the full terminal output with my commands:
-      (drag and drop a .txt file to GitHub)
+      (you may drag and drop a .txt file in `Additional information`)
     render: shell
   validations:
     required: true
