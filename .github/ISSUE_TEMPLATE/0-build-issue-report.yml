@@ -10,11 +10,11 @@ body:
     label: "I confirm that before submitting the issue I have taken the following steps:"
     description: It is required to mark the checkboxes, before submitting the issue.
     options:
-      - label: "Search for [similar issues](https://github.com/isl-org/Open3D/issues)."
+      - label: "I have searched for [similar issues](https://github.com/isl-org/Open3D/issues)."
         required: true
-      - label: "For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!"
+      - label: "For Python issues, I have tested with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). (It may be already fixed!)"
         required: true
-      - label: "Please check with the documentation properly. [For example: [Installing from PyPI](http://www.open3d.org/docs/latest/getting_started.html#installing-from-pypi-or-conda), [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source), [ARM Support](http://www.open3d.org/docs/latest/arm.html#arm-support)]."
+      - label: "I have checked with the [latest documentation](http://www.open3d.org/docs/latest/) properly. [For example: [Installing from PyPI](http://www.open3d.org/docs/latest/getting_started.html#installing-from-pypi-or-conda), [Build from source](http://www.open3d.org/docs/latest/compilation.html#build-from-source), [ARM Support](http://www.open3d.org/docs/latest/arm.html#arm-support)]."
         required: true
 
 - type: textarea

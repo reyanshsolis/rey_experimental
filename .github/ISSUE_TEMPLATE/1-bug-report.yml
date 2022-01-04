@@ -9,11 +9,11 @@ body:
     label: "I confirm that before submitting the issue I have taken the following steps:"
     description: It is required to mark the checkboxes, before submitting the issue.
     options:
-      - label: "Search for [similar issues](https://github.com/isl-org/Open3D/issues)."
+      - label: "I have searched for [similar issues](https://github.com/isl-org/Open3D/issues)."
         required: true
-      - label: "For Python issues, please test with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). It may be already fixed!"
+      - label: "For Python issues, I have tested with the [latest development wheel](http://www.open3d.org/docs/latest/getting_started.html#development-version-pip). (It may be already fixed!)"
         required: true
-      - label: "Check with the documentation properly."
+      - label: "I have checked with the [latest documentation](http://www.open3d.org/docs/latest/) properly. 
         required: true
 
 - type: textarea
@@ -119,6 +119,10 @@ body:
     label: "Attach any additional files required to reproduce the issue."
     description: >
       Attach files (or drive link if the file is large), required to reproduce the issue (for example: the data you used), if any.
+    placeholder: |
+      Here are the files I used as input:
+      PointCloud `cloud_bin_0.pcd` and `cloud_bin_1.pcd: 
+      [LINK]("https://github.com/isl-org/open3d_downloads/releases/download/data/ICLNUIM_LivingRoomFragments.zip")
   validations:
     required: false
 
